@@ -16,7 +16,7 @@ public class Juego {
         titulo = sc.nextLine();
         System.out.println("Ingrese el precio del juego");
         precio = Double.parseDouble(sc.nextLine());
-        System.out.println("Ingrese el genero del juego");
+        System.out.println("Ingrese el genero del juegos");
         genero = sc.nextLine();
     }
 }
