@@ -1,21 +1,34 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int valor = '0';
+        ArrayList<Juego> juegos = new ArrayList<>();
 
-        System.out.println("Bienvenido a nuestro sistema de videojuegos\n¿Que desea?\n1.Comprar Juego\n2.Devolver Juego\n3.Sobre Nosotros\n4.Salir");
+        System.out.println("Elige la opcion\n1.Ingresar Juego\n2.Vender Juego\n3.Ver Juegos");
+        int opcion = sc.nextInt();
 
-        valor = sc.nextInt();
-        do{
-            switch (valor){
+
+        while(opcion!=0){
+            switch (opcion){
                 case 1:
 
+                    Juego juego1 = new Juego();
+                    juego1.RegistrarJuegos();
+                    System.out.println("Juego creado :" + juego1.getTitulo());
+
+                    break;
+
+                case 2:
+                    break;
+
+                case 3:
+                    break;
             }
 
-        }while (valor != 4);
-        System.out.println("Hasta la proxima");
+
+        }
 
     }
 }
