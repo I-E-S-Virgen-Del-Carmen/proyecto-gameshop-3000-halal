@@ -11,12 +11,22 @@ public class Juego {
         return titulo;
     }
 
+    public double getPrecio() {
+        return precio;
+    }
+    public String getGenero() {
+        return genero;
+    }
+
     public void RegistrarJuegos() {
-        System.out.println("Ingrese el nombre del juego con _");
+        System.out.print("Ingrese el nombre del juego con _  :");
         titulo = sc.nextLine();
-        System.out.println("Ingrese el precio del juego");
+        System.out.print("");
+        System.out.print("Ingrese el precio del juego  :");
         precio = Double.parseDouble(sc.nextLine());
-        System.out.println("Ingrese el genero del juegos");
+        System.out.print("");
+        System.out.print("Ingrese el genero del juegos  :");
         genero = sc.nextLine();
+        System.out.print("");
     }
 }
