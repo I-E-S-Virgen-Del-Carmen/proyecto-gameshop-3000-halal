@@ -10,6 +10,12 @@ public class Juego {
     public String getTitulo() {
         return titulo;
     }
+    public double getPrecio() {
+        return precio;
+    }
+    public String getGenero() {
+        return genero;
+    }
 
     public void RegistrarJuegos() {
         System.out.println("Ingrese el nombre del juego con _");
